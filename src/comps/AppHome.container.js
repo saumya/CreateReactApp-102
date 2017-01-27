@@ -1,6 +1,6 @@
 //
 import React, { Component } from 'react';
-import { Container, Header } from 'semantic-ui-react'
+import { Container, Header, Segment, Divider } from 'semantic-ui-react'
 
 import ContentWithHeader from './ContentWithHeader.react'
 
@@ -11,6 +11,16 @@ class AppHome extends Component {
             <div>
                 <ContentWithHeader headerText='Welcome' contentText={contentString} />
                 <ContentWithHeader headerText='Sub Heading' contentText={contentString} />
+
+                <Container>
+                <Segment>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...
+                <Divider section />
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...
+                </Segment>
+                </Container>
+
+                <ContentWithHeader headerText='Footer Notes' contentText={contentString} />
             </div>
             
         )
