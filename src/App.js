@@ -4,6 +4,8 @@ import './App.css';
 
 import { Container, Header } from 'semantic-ui-react'
 
+import AppHome from './comps/AppHome.container'
+
 class App extends Component {
   render() {
     return (
@@ -12,6 +14,8 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
+
+        <AppHome />
         
         
         <Container>
