@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Container, Header, Segment, Divider } from 'semantic-ui-react'
 
 import ContentWithHeader from './ContentWithHeader.react'
+import LoginRegisterView from './LoginRegisterView.react'
 
 class AppHome extends Component {
     render(){
@@ -13,6 +14,8 @@ class AppHome extends Component {
                 <ContentWithHeader headerText='Sub Heading' contentText={contentString} />
 
                 <Container>
+
+                <LoginRegisterView />
                 <Segment>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...
                 <Divider section />
