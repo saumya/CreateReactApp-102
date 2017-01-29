@@ -1,6 +1,13 @@
 React + semantic UI CSS
 =========================
 
+ - Basics are done.
+
+### TODO
+
+ - Make an application
+ - Get the data flow
+ - Use Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
