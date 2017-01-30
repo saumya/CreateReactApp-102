@@ -19,10 +19,12 @@ class AppHome extends Component {
         
         return (
             <div>
-
                 
-                
-                
+                <div>
+                    <Button onClick={this.toggleVisibility}>Menu</Button>
+                    <Button>Home</Button>
+                    <Button>Contact</Button>
+                </div>
 
                 <Sidebar.Pushable as={Segment}>
                     <Sidebar as={Menu} animation='uncover' width='thin' visible={visible} icon='labeled' vertical inverted>
@@ -40,23 +42,23 @@ class AppHome extends Component {
                     </Menu.Item>
                     </Sidebar>
                     <Sidebar.Pusher>
-                    <Segment basic>
-                
-
-                        <ContentWithHeader headerText='Site Title' contentText={contentString} />
-                        <Button onClick={this.toggleVisibility}>Menu</Button>
-
-                        <LoginRegisterView />
-
-                        <ContentWithHeader headerText='Introduction' contentText={contentString} />
-                        <Segment>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...
-                        <Divider section />
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...
-                        </Segment>
-                        <ContentWithHeader headerText='Footer Notes' contentText={contentString} />
                         
-                    </Segment>
+                        <Segment basic>
+                            
+                            <ContentWithHeader headerText='Site Title' contentText={contentString} />
+                            
+                            <LoginRegisterView />
+
+                            <ContentWithHeader headerText='Introduction' contentText={contentString} />
+                            <Segment>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...
+                            <Divider section />
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...
+                            </Segment>
+                            <ContentWithHeader headerText='Footer Notes' contentText={contentString} />
+                            
+                        </Segment>
+
                     </Sidebar.Pusher>
                 </Sidebar.Pushable>
 
