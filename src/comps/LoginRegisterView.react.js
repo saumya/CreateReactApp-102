@@ -28,7 +28,7 @@ class LoginRegisterView extends Component {
                                 </p>
                             </Container>
                             <Divider hidden />
-                            <Button secondary>Sign Up Now</Button>
+                            <Button secondary onClick={ this.props.onSignUp }>Sign Up Now</Button>
                         </Segment>
                     </Grid.Column>
                 </Grid>
